@@ -1,0 +1,21 @@
+Muitos fãs da Xuxa pedem para que ela cante a música "5 Patinhos" com um número maior de patos. 
+Obviamente, Xuxa não quer escrever uma letra para cada fã, e pediu para que você escrevesse um programa que faça isso por ela.
+
+Assim sendo, crie um programa que recebe uma quantidade de patinhos e armazena em P. 
+Seu programa deve imprimir na tela a música "P Patinhos" (trocando P pela quantidade de patos) da Xuxa com a quantidade de patinhos informada pelo usuário via teclado. 
+Abaixo pode ser vista a letra da música original:
+
+
+
+P=int(input('Digite a quantidade de Patinhos que você deseja: '))
+contador=P
+if P<=0:
+    print('Opção inválida!')
+else:
+    while 0<P:
+        if P==1:
+            print(P,'patinho\nFoi passear \nAlém das montanhas \nPara brincar \nA mamãe gritou \nQuack quack quack \nMas nenhum patinho \nVoltou de lá')
+        else:
+            print(P,'patinhos\nForam passear \nAlém das montanhas \nPara brincar \nA mamãe gritou \nQuack quack quack \nMas só {} patinhos \nVoltaram de lá'.format(P-1))
+        P=P-1
+    print('A mamãe patinha \nFoi procurar \nAlém das montanhas \nNa beira do mar \nA mamãe gritou \nQuack quack quack \nE os {} patinhos \nVoltaram de lá'.format(contador))
