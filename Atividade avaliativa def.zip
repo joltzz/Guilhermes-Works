@@ -1,0 +1,172 @@
+###########EXERCICIO 1###############
+
+def somaPositivos(x,y):
+ if x>0 and y>0:
+        return x+y
+ else:
+     return ('-1')
+
+
+def divide(x,y):
+  if y == 0:
+    return 'Erro: 0'
+  else:
+    return x/y
+
+
+def verificaTriangulo(x,y,z):
+    if x== y == z:
+        return 'Triângulo Equilátero'
+    elif x==y or y==z or x==z:
+        return 'Triângulo Isósceles'
+    else:
+        return 'Triângulo Escaleno'
+#tent=verificaTriangulo(2,2,2)
+#print(tent)
+
+def verificaIdade(idd):
+    if idd<0:
+        return 'Erro: Menor que zero'
+    elif idd<=12:
+        return 'Criança'
+    elif idd<=18:
+        return 'Adolescente'
+    elif idd<=120:
+        return 'Adulto'
+    else:
+        return 'Erro: maior que 120'
+#tentt=verificaIdade(2)
+#print(tentt)
+
+def sinaleira(cor):
+    if cor.lower()=="verde":
+        return 'Sinaleira Aberta'
+    elif cor.lower()=="amarela":
+        return 'Atenção!'
+    elif cor.lower()=="vermelho":
+        return 'Sinaleira Fechada'
+    else:
+        return 'Erro'
+#coor=sinaleira('azul')
+#print(coor)
+
+
+def contador(x):
+    for i in range(x,301):
+        print(i)
+#cont=contador(29)
+#print(cont)
+
+def verificarPrimo(x):
+  aux = 0
+  i = 1
+  if x == 1:
+    return True
+  while i <= (x+1):
+    if x % i == 0:
+      aux = aux + 1
+    i = i + 1
+  if aux == 2:
+    return True
+  else:
+    return False
+
+
+def achaMaior(x,y,z):
+  if x > y and x > z:
+    print(x, 'é o maior valor!')
+  elif y > x and y > z:
+    print(y, 'é o maior valor!')
+  else:
+    print(z)
+
+
+def imprimePares(x):
+    for i in range(0,x+1):
+        if i % 2==0:
+            print(i)
+#tentar=imprimePares(41)
+
+
+#######EXERCÍCIO 2#############
+while True:
+    print('''[1] Somar Positivos
+[2] Dividir
+[3] Verifica Triângulo
+[4] Verifica Idade
+[5] Sinaleira
+[6] Conta até 300
+[7] Verifica Primo
+[8] Acha Maior
+[9] Imprime pares
+Para sair do programa digite qualquer outro valor''')
+    opcao=int(input('Digite a opção que deseja fazer: '))
+    if opcao>9 or opcao<1:
+        break
+    if opcao==1:
+        x=int(input('Digite o primeiro valor: '))
+        y=int(input('Digite o segundo valor: '))
+        verif=somaPositivos(x,y)
+        print('A soma dos positivos é: ',verif,'\n')
+    elif opcao==2:
+        x = int(input('Digite o valor de X: '))
+        y = int(input('Digite o valor de Y: '))
+        verif = divide(x,y)
+        print('A divisão é igual a: ',verif)
+    elif opcao==3:
+        x = int(input('Digite o valor de X: '))
+        y = int(input('Digite o valor de Y: '))
+        z = int(input('Digite o valor de Z: '))
+        verif = verificaTriangulo(x,y,z)
+        print('Ele é um:',verif)
+    elif opcao==4:
+        x = int(input('Digite um valor para verificar a idade: '))
+        verif=verificaIdade(x)
+        print('Você é: ',verif)
+    elif opcao==5:
+        cor = input('Digite uma cor da sinaleira: ')
+        verif=sinaleira(cor)
+        print('Esta cor significa:',verif)
+    elif opcao==6:
+        x=int(input('Digite um valor qualquer: '))
+        contador(x)
+    elif opcao == 7:
+        x = int(input('Digite um valor qualquer: '))
+        verif = verificarPrimo(x)
+        print(verif)
+    elif opcao==8:
+        x = int(input('Digite o primeiro valor : '))
+        y = int(input('Digite o segundo valor : '))
+        z = int(input('Digite o último valor : '))
+        achaMaior(x,y,z)
+    elif opcao == 9:
+        x = int(input('Digite até qual valor você gostaria de imprimir: '))
+        imprimePares(x)
+print('Obrigado por utilizar nossos serviços!')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
