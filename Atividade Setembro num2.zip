@@ -1,0 +1,10 @@
+
+soma=0.0
+pf=int(input('Digite um número para verificar se ele é perfeito: '))
+for i in range(1,int(pf/2+1)):
+    if pf % i==0:
+        soma+=i
+if soma==pf:
+    print('Ele é perfeito!')
+else:
+    print('Ele não é perfeito')

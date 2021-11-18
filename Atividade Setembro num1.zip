@@ -1,0 +1,27 @@
+
+"""
+indices = []
+while True:
+  bool=True
+  ind = int(input('Digite a quantidade de índices de audiência: '))
+  print('A quantidade que você deseja é:',ind)
+  soma = 0.0
+  aux2=-1
+  for i in range(0,ind):
+    aux = float(input('Digite o valor da audiência: '))
+    indices.append(aux)
+    soma += aux
+    if aux<aux2:
+      bool = False
+    aux2=aux
+  if bool:
+    print('AUDIÊNCIA SEMPRE CRESCENTE')
+  else:
+    print('AUDIÊNCIA NEM SEMPRE CRESCENTE')
+  calc = soma / ind
+  print('A média é: %.1f ' % calc)
+  cont=int(input('Se deseja continuar pressione 1: '))
+  if cont!=1:
+    print('Obrigado por usar o programa!')
+    break"""
+
