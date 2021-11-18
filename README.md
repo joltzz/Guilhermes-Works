@@ -1,0 +1,5 @@
+- 👋 Hi, I’m Guilherme Silva
+- 👀 I’m interested in Programming
+- 🌱 I’m currently learning Java
+- 💞️ I’m looking for a work in Programmers Juniors
+- 📫 You can reach me in my email: guijsilva02@gmail.com
